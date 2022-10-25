@@ -1,68 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap");
 
-body{
-  background: #2A363F;
+body {
+  background: #2a363f;
   margin: 0;
-  font-family:'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
-.container{
+.container {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20rem;
 }
 
-.form{
+.container-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 24px;
+  width: 500px;
 }
 
-.textfield > input{
-  background: #323E47;
-  border: none;
+form {
+  max-width: 300px;
+  width: 300px;
+}
+
+.textfield {
+  padding-bottom: 20px;
+}
+
+.textfield > input {
+  background: #323e47;
+  border: solid transparent 2px;
+  transition: all 0.3s ease;
   border-radius: 4px;
   padding: 8px;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
+  color: #fff;
 }
 
-input::placeholder{
-  color: #727B85;
+input::placeholder {
+  color: #727b85;
 }
 
-input:hover{
-  background: #42525E;
-  border: solid;
-  border-width: 2px;
-  border-color: #6ED9A0;
+input:hover {
+  background: #42525e;
+  border: solid #6ed9a0 2px;
 }
 
-input:focus{
-  background: #2A363F;
-  border: solid;
-  border-width: 2px;
-  border-color: #6ED9A0; 
+input:focus {
+  background: #2a363f;
+  border: solid #6ed9a0 2px;
   outline: none;
 }
 
-.btn-login{
+.btn-login {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
-.btn-login > button{
+.btn-login > button {
   padding: 8px;
+  text-transform: uppercase;
   width: 100%;
-  background: #6ED9A0;
+  height: 40px;
+  background: #6ed9a0;
   border: none;
   cursor: pointer;
   border-radius: 4px;
@@ -71,34 +78,63 @@ input:focus{
   letter-spacing: 2px;
 }
 
-button:active{
-  background: #5A6168;
+button:active {
+  background: #5a6168;
 }
 
-.btn-login > p{
-  color: #5A6168;
+.btn-login > p {
+  color: #5a6168;
   font-weight: bold;
   cursor: pointer;
 }
 
-p:hover{
+p:hover {
   text-decoration: underline;
 }
 
-.logo{
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 200px;
+  min-width: 300px;
 }
 
-.logo::after{
+/* .logo::before {
   content: "";
   position: absolute;
   width: 2px;
   height: 300px;
-  background: #35414A;
-  right: -10rem;
+  background: #35414a;
+  right: 1rem;
+} */
 
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
 }
 
+.separador {
+  width: 2px;
+  height: 300px;
+  background: #35414a;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 100px;
+    padding: 100px;
+  }
+  /* .logo::before {
+    width: 300px;
+    height: 2px;
+    right: auto;
+    bottom: 50px;
+  } */
+}
