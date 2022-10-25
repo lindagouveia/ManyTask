@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+
+body{
+  background: #2A363F;
+  margin: 0;
+  font-family:'Noto Sans', sans-serif;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.textfield > input{
+  background: #323E47;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder{
+  color: #727B85;
+}
+
+input:hover{
+  background: #42525E;
+  border: solid;
+  border-width: 2px;
+  border-color: #6ED9A0;
+}
+
+input:focus{
+  background: #2A363F;
+  border: solid;
+  border-width: 2px;
+  border-color: #6ED9A0; 
+  outline: none;
+}
+
+.btn-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-login > button{
+  padding: 8px;
+  width: 100%;
+  background: #6ED9A0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+button:active{
+  background: #5A6168;
+}
+
+.btn-login > p{
+  color: #5A6168;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+p:hover{
+  text-decoration: underline;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo::after{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 300px;
+  background: #35414A;
+  right: -10rem;
+
+}
+
